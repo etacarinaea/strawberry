@@ -2,7 +2,7 @@ strawberry
 ==========
 
 A simpler version of the [Read the Docs
-theme](https://github.com/rtfd/readthedocs.org) for
+theme](https://github.com/rtfd/sphinx_rtd_theme) for
 [Sphinx](http://www.sphinx-doc.org).
 
 Installation
