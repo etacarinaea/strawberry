@@ -1,0 +1,157 @@
+body {
+  font-family: Arial;
+  color: #3a3a3a;
+
+  background-color: #fafafa;
+
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #9a9a9a;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#sidebar {
+  z-index: 100;
+
+  height: 100vh;
+  width: 260px;
+
+  float: left;
+
+  color: #e0e0e0;
+
+  background-color: #2d2d2d;
+
+  overflow-y: auto;
+
+  box-sizing: border-box;
+}
+
+#sidebar-header {
+  padding: 20px 10px;
+  text-align: center;
+
+  background-color: #c54763;
+}
+
+#sidebar-header input {
+  width: 100%;
+
+  padding: 3px;
+
+  border: none;
+
+  box-sizing: border-box;
+}
+
+#sidebar nav {
+  padding-top: 10px;
+}
+
+#sidebar nav .caption {
+  margin: 10px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+#sidebar ul a {
+  display: block;
+
+  width: 100%;
+
+  color: #5a5a5a;
+  padding: 4px 10px;
+
+  box-sizing: border-box;
+}
+
+#sidebar .toctree-l1 a.current {
+  padding-left: 10px;
+  color: #3a3a3a;
+  background-color: #e0e0e0;
+}
+#sidebar .toctree-l2 a {
+  padding-left: 20px;
+  background-color: #c6c6c6;
+}
+#sidebar .toctree-l3 a {
+  padding-left: 30px;
+  background-color: #acacac;
+}
+#sidebar .toctree-l4 a {
+  padding-left: 40px;
+  background-color: #929292;
+}
+
+#sidebar a.current {
+  color: #3a3a3a;
+  background-color: #fafafa;
+}
+
+#sidebar .caption {
+  margin-bottom: 5px;
+}
+
+
+/* CONTENT */
+
+.relbar {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+
+  border-bottom: 1px solid #9a9a9a;
+}
+/* Prevent relbar from collapsing because of floating elements */
+.relbar:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.previous {
+  color: #3a3a3a;
+  float: left;
+}
+.next {
+  color: #3a3a3a;
+  float: right;
+}
+
+#page {
+  z-index: 0;
+
+  height: 100vh;
+
+  padding: 20px 40px;
+
+  overflow-y: scroll;
+
+  box-sizing: border-box;
+}
+
+.headerlink {
+  margin-left: 5px;
+}
+.headerlink:link,
+.headerlink:visited {
+  color: #c54763;
+  opacity: 0.4;
+}
+.headerlink:hover {
+  color: #c54763;
+  opacity: 0.9;
+}
