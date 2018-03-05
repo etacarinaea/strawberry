@@ -155,3 +155,18 @@ a {
   color: #c54763;
   opacity: 0.9;
 }
+
+.figure {
+  width: 100%;
+  text-align: center;
+}
+.figure img {
+  max-width: 100%;
+}
+
+dd {
+  margin-left: 10px;
+  padding-left: 30px;
+
+  border-left: 1px solid #cacaca;
+}
