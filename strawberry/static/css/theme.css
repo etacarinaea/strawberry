@@ -17,8 +17,22 @@ h1 {
   margin: 0 0 10px 0;
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:hover {
   text-decoration: none;
+}
+
+#page a,
+#page a:link,
+#page a:visited,
+#page a:hover {
+  color: #c54763;
+  opacity: 0.7;
+}
+#page a:hover {
+  opacity: 1.0;
 }
 
 
@@ -44,6 +58,10 @@ a {
   text-align: center;
 
   background-color: #c54763;
+}
+
+#sidebar-header a {
+  color: #e0e0e0;
 }
 
 #sidebar-header input {
@@ -148,12 +166,10 @@ a {
 }
 .headerlink:link,
 .headerlink:visited {
-  color: #c54763;
-  opacity: 0.4;
+  opacity: 0.4!important;
 }
 .headerlink:hover {
-  color: #c54763;
-  opacity: 0.9;
+  opacity: 0.9!important;
 }
 
 .figure {
