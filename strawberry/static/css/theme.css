@@ -186,3 +186,23 @@ dd {
 
   border-left: 1px solid #cacaca;
 }
+
+code.code {
+  padding: 0 2px;
+  /* line-height: 1.3em; */
+  font-family: monospace;
+  font-style: normal;
+  background-color: #f3f3f3;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+}
+
+code.code .operator {
+  color: #965d6a;
+}
+code.code .literal {
+  color: #965d6a;
+}
+code.code .punctuation {
+  color: #5f7d17;
+}
