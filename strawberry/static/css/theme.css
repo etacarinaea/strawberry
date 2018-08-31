@@ -14,8 +14,46 @@ hr {
 }
 
 h1 {
+  font-size: 2em;
+  font-style: bold;
+
   margin: 0 0 10px 0;
+
+  counter-reset: h2counter;
 }
+
+h2, h3, h4, h5 {
+  font-size: 1em;
+  font-style: bold;
+  margin: 2em 0 1em 0;
+}
+
+h2 {
+  counter-reset: h3counter;
+}
+h2:before {
+  counter-increment: h2counter;
+  content: counter(h2counter) "\00a0\00a0";
+}
+h3 {
+  counter-reset: h4counter;
+}
+h3:before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) "\00a0\00a0";
+}
+h4 {
+  counter-reset: h5counter;
+}
+h4:before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\00a0\00a0 ";
+}
+h5:before {
+  counter-increment: h5counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "\00a0\00a0 ";
+}
+
 
 a,
 a:link,
@@ -98,6 +136,10 @@ a:hover {
   box-sizing: border-box;
 }
 
+#sidebar a:hover {
+  color: #c54763;
+}
+
 #sidebar .toctree-l1 a.current {
   padding-left: 10px;
   color: #3a3a3a;
@@ -114,6 +156,11 @@ a:hover {
 #sidebar .toctree-l4 a {
   padding-left: 40px;
   background-color: #929292;
+}
+#sidebar .toctree-l5 a {
+  padding-left: 50px;
+  background-color: #929292;
+  font-size: 0.8em;
 }
 
 #sidebar a.current {
