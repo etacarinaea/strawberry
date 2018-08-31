@@ -15,7 +15,7 @@ hr {
 
 h1 {
   font-size: 2em;
-  font-style: bold;
+  font-weight: bold;
 
   margin: 0 0 10px 0;
 
@@ -24,7 +24,7 @@ h1 {
 
 h2, h3, h4, h5 {
   font-size: 1em;
-  font-style: bold;
+  font-weight: bold;
   margin: 2em 0 1em 0;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 
   float: left;
 
-  color: #e0e0e0;
+  color: #fafafa;
 
   background-color: #2d2d2d;
 
@@ -99,7 +99,7 @@ a:hover {
 }
 
 #sidebar-header a {
-  color: #e0e0e0;
+  color: #fafafa;
 }
 
 #sidebar-header input {
