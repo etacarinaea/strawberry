@@ -253,3 +253,37 @@ code.code .literal {
 code.code .punctuation {
   color: #5f7d17;
 }
+
+.admonition p {
+  margin: 0;
+  padding: 10px;
+}
+.admonition .admonition-title {
+  color: #fafafa;
+  font-weight: bold;
+}
+
+.admonition {
+  border: 1px solid #999999;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+}
+.admonition .admonition-title {
+  background-color: #999999;
+}
+
+.admonition.note {
+  border: 1px solid #ddcc00;
+  background-color: #fffde6;
+}
+.admonition.note .admonition-title {
+  background-color: #baae1c;
+}
+
+.admonition.warning {
+  border: 1px solid #c54763;
+  background-color: #f9ecee;
+}
+.admonition.warning .admonition-title {
+  background-color: #c54763;
+}
