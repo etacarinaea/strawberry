@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='strawberry',
-    version='0.0.1',
+    version='0.1.0',
     description='Theme for Sphinx',
 
     packages=['strawberry'],
