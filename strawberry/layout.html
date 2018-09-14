@@ -16,7 +16,9 @@
     <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
   {%- endfor %}
 
-  <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+  {%- if not theme_sidebar_scrollbar|tobool %}
+    <script type="text/javascript" src="{{ pathto('_static/js/sidebar-scrollbar.js', 1) }}"></script>
+  {%- endif %}
   </head>
   <body>
     <div id="sidebar-parent">
