@@ -92,7 +92,7 @@ a:hover {
 }
 
 #sidebar-header {
-  padding: 20px 10px;
+  padding: 20px 20px;
   text-align: center;
 
   background-color: #c54763;
@@ -131,7 +131,7 @@ a:hover {
   width: 100%;
 
   color: #5a5a5a;
-  padding: 4px 10px;
+  padding: 7px 10px;
 
   box-sizing: border-box;
 }
@@ -232,6 +232,9 @@ dd {
   padding-left: 30px;
 
   border-left: 1px solid #cacaca;
+}
+dt {
+  margin: 1em 0;
 }
 
 code.code {
