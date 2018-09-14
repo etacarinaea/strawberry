@@ -15,20 +15,24 @@
   {%- for scriptfile in script_files %}
     <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
   {%- endfor %}
+
+  <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   </head>
   <body>
-    <div id="sidebar">
-      <div id="sidebar-header">
-        <a href="{{ pathto(master_doc) }}"><h1>{{ project|striptags|e }}</h1></a>
-        <form id="search" action="{{ pathto('search') }}" method="get">
-          <input type="text" name="query" placeholder="Search">
-          <input type="hidden" name="check_keywords" value="yes">
-          <input type="hidden" name="area" value="default">
-        </form>
+    <div id="sidebar-parent">
+      <div id="sidebar">
+        <div id="sidebar-header">
+          <a href="{{ pathto(master_doc) }}"><h1>{{ project|striptags|e }}</h1></a>
+          <form id="search" action="{{ pathto('search') }}" method="get">
+            <input type="text" name="query" placeholder="Search">
+            <input type="hidden" name="check_keywords" value="yes">
+            <input type="hidden" name="area" value="default">
+          </form>
+        </div>
+        <nav>
+          {{ toctree(maxdepth=theme_navigation_maxdepth|int) }}
+        </nav>
       </div>
-      <nav>
-        {{ toctree(maxdepth=theme_navigation_maxdepth|int) }}
-      </nav>
     </div>
     <div id="page">
       <div class="relbar">

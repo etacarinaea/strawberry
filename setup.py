@@ -9,6 +9,7 @@ setup(
     package_data={'strawberry': [
         'theme.conf',
         '*.html',
+        'static/js/*.js',
         'static/css/*.css'
     ]},
     include_package_data=True,
