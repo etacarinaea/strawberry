@@ -9,7 +9,7 @@ Installation
 ------------
 
 ```
-git clone https://github.com/fuyuneko/strawberry.git
+git clone ...
 cd strawberry
 python setup.py install
 ```
